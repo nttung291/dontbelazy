@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:padding="10dp" >
+    <ImageView
+        android:src="@drawable/ic_access_alarm_blu_24dp"
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="Do you want to go to school ???"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        />
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="20 : 20"
+        android:id="@+id/timeStart"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/title"
+        />
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="CSDL"
+        android:id="@+id/subject"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timeStart"
+        android:layout_below="@id/title"/>
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="B801"
+        android:id="@+id/room"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/subject"
+        android:layout_below="@id/title"/>
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/subject"
+        android:layout_toRightOf="@id/subject"
+        android:text="Okayyy"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/subject"
+        android:layout_toRightOf="@id/bt_ok"
+        android:layout_marginLeft="16dp"
+        android:text="Shut up"/>
+</RelativeLayout>

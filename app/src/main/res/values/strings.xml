@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">dontbelazy</string>
+    <string-array name="array_test_spinner">
+        <item>Add teacher</item>
+        <item>Nguyen Van Son</item>
+        <item>Nguyen Thanh Tung</item>
+        <item>Cuong Hx</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+    </string-array>
+
+    <string-array name="array_test_spinner_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="simple_activity_transition">simple_activity_transition</string>
+    <string name="simple_activity_subject">simple_activity_subject</string>
+    <string name="buttom_note">buttom_note</string>
+    <string name="buttom_subject">buttom_note</string>
+
+    <string name="simple_activity_contact">simple_activity_contact</string>
+    <string name="simple_activity_time">simple_activity_time</string>
+    <string name="simple_contact">simple_contact</string>
+    <string name="simple_subject">simple_subject</string>
+
+
+
+
+</resources>

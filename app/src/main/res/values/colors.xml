@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff6d6d</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#f95f62</color>
+    <color name="month_mini_day_number">#FF000000</color>
+    <color name="calendar_grid_line_inner_vertical_color">#FFCCCCCC</color>
+    <color name="titleTextColor">@android:color/white</color>
+    <color name="month_other_month_day_number">#ff939497</color>
+    <color name="month_day_names_color">#757575</color>
+    <color name="subjectlistcolor">#aaffd166</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="dotcolor">#69b86d</color>
+</resources>

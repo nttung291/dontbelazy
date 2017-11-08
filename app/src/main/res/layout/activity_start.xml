@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.sonnv.dontbelazy.activities.StartActivity">
+
+    <LinearLayout
+        android:id="@+id/lnl_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="2"
+           android:orientation="vertical"
+           android:background="@drawable/bg_start"
+           android:alpha="0.8">
+           <ListView
+               android:id="@+id/lv_start"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </ListView>
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:onClick="onClick"
+                style="@style/Base.Widget.AppCompat.Button"
+                android:id="@+id/cv_start_contact"
+                android:layout_marginStart="@dimen/padding"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="4dp">
+
+                <ImageView
+                    android:id="@+id/iv_teacher_list_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_start_teachers_list"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.6"
+                    android:transitionName="@string/simple_activity_transition"
+                    tools:ignore="UnusedAttribute"/>
+
+                <TextView
+                    android:id="@+id/tv_teacher_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="#343F4B"
+                    android:text="Teachers List" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:onClick="onClick"
+                style="@style/Base.Widget.AppCompat.Button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/cv_start_subject"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/padding"
+                android:layout_marginBottom="4dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="@dimen/padding">
+
+                <ImageView
+                    android:id="@+id/iv_subject_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_start_subjects_list"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.6"
+                    android:transitionName="@string/simple_activity_transition"
+                    tools:ignore="UnusedAttribute"/>
+
+                <TextView
+                    android:id="@+id/tv_subject_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Subjects List"
+                    android:textColor="#343F4B"
+                    android:textSize="30sp" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:onClick="onClick"
+                style="@style/Base.Widget.AppCompat.Button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/cv_start_timetable"
+                android:layout_marginStart="@dimen/padding"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="@dimen/padding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="4dp">
+
+                <ImageView
+                    android:id="@+id/iv_time_table_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_start_time_table"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.6"
+                    android:transitionName="@string/simple_activity_transition"
+                    tools:ignore="UnusedAttribute"/>
+
+                <TextView
+                    android:id="@+id/tv_time_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="#343F4B"
+                    android:text="Timetable"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:onClick="onClick"
+                style="@style/Base.Widget.AppCompat.Button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/cv_start_note"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/padding"
+                android:layout_marginBottom="@dimen/padding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="@dimen/padding">
+
+                <ImageView
+
+                    android:id="@+id/iv_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_start_note"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.6"
+                    android:transitionName="@string/simple_activity_transition"
+                    tools:ignore="UnusedAttribute"/>
+
+                <TextView
+
+                    android:id="@+id/tv_note_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Note"
+                    android:textColor="#343F4B"
+                    android:textSize="30sp" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="end|bottom"
+        android:id="@+id/fab_start_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:backgroundTint="#ff8585"
+        app:srcCompat="@drawable/ic_add_white_24dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:transitionName="@string/buttom_note"
+        tools:ignore="UnusedAttribute"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_start_subject"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="#ff8585"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_addsubject"
+        android:layout_marginRight="@dimen/fab_margin" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_start_contact"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:fabSize="normal"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="80dp"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="#ff8585"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_addcontact"
+        android:layout_marginRight="80dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_start_note"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:fabSize="normal"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="100dp"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:backgroundTint="#ff8585"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_addnote"
+        android:layout_marginRight="100dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>
